@@ -1,0 +1,16 @@
+# KI-Box
+
+> KI-Box is a planned one-command installer that turns a Linux PC with 16 GB RAM, no GPU and a roughly six-year-old CPU into a private German-language AI workstation with chat, document search with sources, user accounts and encrypted backups. Status as of November 2026: specification only, no installer exists and nothing has been measured on the target hardware.
+
+KI-Box packages Ollama, Open WebUI, Caddy, restic and OCRmyPDF. Its own code is Apache-2.0; Open WebUI uses its own licence, which is not OSI-approved. It is a project of KI Klub Werder e.V., a non-profit in Werder (Havel), Germany.
+
+## Docs
+
+- [README](https://github.com/KI-Klub-Werder-e-V/ki-box/blob/main/README.md): Overview, memory plan, FAQ, comparison with Harbor, Open WebUI and AnythingLLM
+- [README (Deutsch)](https://github.com/KI-Klub-Werder-e-V/ki-box/blob/main/README.de.md): German overview and FAQ
+- [Specification (Deutsch)](https://github.com/KI-Klub-Werder-e-V/ki-box/blob/main/docs/spec.de.md): Scope, memory budget, install flow, milestones, acceptance criteria
+
+## Optional
+
+- [KI Klub Werder e.V.](https://ki-klub-werder.de): The non-profit behind the project
+- [MarieKondoForAgents](https://github.com/KI-Klub-Werder-e-V/MarieKondoForAgents): Prepares organisational data for AI agents

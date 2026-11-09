@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you refer to this project, please cite it as below."
+title: "KI-Box: a private German-language AI workstation for a 16 GB PC without a GPU"
+abstract: "Specification for a planned one-command installer that packages Ollama, Open WebUI, Caddy and restic into a tested low-memory profile with German document search. No installer has been released yet."
+license: Apache-2.0
+repository-code: "https://github.com/KI-Klub-Werder-e-V/ki-box"
+url: "https://ki-klub-werder.de"
+authors:
+  - name: "KI Klub Werder e.V."
+keywords: [local-llm, self-hosted, ollama, open-webui, german, rag, cpu-only, gdpr]
