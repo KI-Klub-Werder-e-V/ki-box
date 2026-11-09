@@ -94,7 +94,7 @@ The first build lives in [KI-Box Harbor](https://github.com/KI-Klub-Werder-e-V/k
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash
-harbor up
+kibox up
 ```
 
 ## Roadmap

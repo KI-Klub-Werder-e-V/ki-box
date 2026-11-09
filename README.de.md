@@ -8,7 +8,7 @@
 >
 > ```bash
 > curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash
-> harbor up
+> kibox up
 > ```
 
 ## Steckbrief
