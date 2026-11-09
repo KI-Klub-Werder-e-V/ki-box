@@ -4,7 +4,12 @@
 
 **Die KI-Box ist ein geplanter Installer, der mit einem Befehl aus einem kleinen Linux-Rechner mit 16 GB RAM, ohne Grafikkarte und mit etwa sechs Jahre alter CPU einen privaten KI-Arbeitsplatz macht: Chat, deutsche Dokumentensuche mit Quellen, Nutzerkonten und verschlüsseltes Backup.** Sie bündelt bestehende Komponenten (Ollama, Open WebUI, Caddy, restic) in einem getesteten Profil für wenig Speicher. Die KI-Box ist ein Projekt des gemeinnützigen [KI Klub Werder e.V.](https://ki-klub-werder.de) aus Werder (Havel).
 
-> **Stand November 2026: nur Spezifikation.** Es gibt noch keinen Installer, und auf der Zielhardware ist noch nichts gemessen. Die vollständige Planung steht in [`docs/spec.de.md`](docs/spec.de.md).
+> **Stand November 2026: erste Version verfügbar.** [**KI-Box Harbor**](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor) ist ein abgespeckter Harbor-Fork mit nur Ollama und Open WebUI. Auf der Zielhardware ist noch nichts gemessen. Die vollständige Planung steht in [`docs/spec.de.md`](docs/spec.de.md); Backup, Restore und HTTPS folgen.
+>
+> ```bash
+> curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash
+> harbor up
+> ```
 
 ## Steckbrief
 
@@ -45,7 +50,7 @@ Zwei Voreinstellungen von Open WebUI passen nicht zu deutschen Texten. Das Embed
 
 ### Was unterscheidet die KI-Box von Harbor, Open WebUI oder AnythingLLM?
 
-[Harbor](https://github.com/av/harbor) startet viele verschiedene lokale LLM-Dienste und ist bereits verfügbar. Wer ausprobieren will, nimmt heute Harbor. Die KI-Box soll genau ein getestetes Profil für 16 GB ohne GPU liefern, mit deutscher Suche, Backup und Restore. Ob sie auf Harbor aufbaut, wird im [ersten Meilenstein](docs/spec.de.md#meilensteine) entschieden.
+[Harbor](https://github.com/av/harbor) startet viele verschiedene lokale LLM-Dienste und ist bereits verfügbar. Wer ausprobieren will, nimmt heute Harbor. Die KI-Box soll genau ein getestetes Profil für 16 GB ohne GPU liefern, mit deutscher Suche, Backup und Restore. Entschieden: Die KI-Box baut auf Harbor auf, als abgespeckter Fork [KI-Box Harbor](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor).
 
 ### Verlassen Daten den Rechner?
 

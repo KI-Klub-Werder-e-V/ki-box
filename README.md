@@ -4,7 +4,7 @@ English · [Deutsch](README.de.md)
 
 **KI-Box is a planned one-command installer that turns a small Linux PC with 16 GB RAM, no GPU and a roughly six-year-old CPU into a private AI workstation with chat, German document search with sources, user accounts and encrypted backups.** It packages existing open components (Ollama, Open WebUI, Caddy, restic) in one tested low-memory profile. It is a project of [KI Klub Werder e.V.](https://ki-klub-werder.de), a non-profit AI club in Werder (Havel), Germany.
 
-> **Status (November 2026): specification only.** There is no installer yet, and nothing here has been measured on the target hardware. The full design is in [`docs/spec.de.md`](docs/spec.de.md) (German). Figures below are labelled as measured upstream data or as estimates.
+> **Status (November 2026): first build available.** [**KI-Box Harbor**](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor) is a stripped-down fork of Harbor with only Ollama and Open WebUI and the defaults below. It has not yet been measured on the target hardware. This repository holds the full design in [`docs/spec.de.md`](docs/spec.de.md) (German); backup, restore and HTTPS are still to come.
 
 ## What KI-Box is
 
@@ -78,7 +78,7 @@ Two Open WebUI defaults do not suit German. The default embedding model is `all-
 | **Backup and restore included** | Yes | Not a headline feature | Manual | Manual |
 | **Status** | Specification | Released | Released | Released |
 
-Want to try many backends and services? Use Harbor today. KI-Box is for one tested setup that stays maintained. Whether KI-Box should be built on Harbor is an open question in [the first milestone](docs/spec.de.md#meilensteine).
+Want to try many backends and services? Use Harbor today. KI-Box is for one tested setup that stays maintained. KI-Box now builds on Harbor as the stripped-down fork [KI-Box Harbor](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor).
 
 ### Does any data leave the machine?
 
@@ -88,18 +88,18 @@ Not by design. Open WebUI's image disables telemetry, and KI-Box will set offlin
 
 Open WebUI can connect to MCP servers over Streamable HTTP. The planned link to [MarieKondoForAgents](https://github.com/KI-Klub-Werder-e-V/MarieKondoForAgents) is deferred because its HTTP mode requires an OAuth 2.1 authorization server. In v1, cleaned documents are uploaded by hand.
 
-## Planned install
+## Install
 
-This command does **not work yet**; it shows the intended interface.
+The first build lives in [KI-Box Harbor](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor):
 
 ```bash
-# Planned, no release exists yet
-curl -fsSL https://github.com/KI-Klub-Werder-e-V/ki-box/releases/download/v1.0.0/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash
+harbor up
 ```
 
 ## Roadmap
 
-1. Decide whether to build on Harbor or stand alone
+1. ~~Decide whether to build on Harbor or stand alone~~ Built on Harbor: [KI-Box Harbor](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor)
 2. Measure speed, memory and German answer quality on a 16 GB CPU-only PC
 3. Build the installer, backup, restore and update commands
 4. Pilot for four weeks, then release v1.0.0

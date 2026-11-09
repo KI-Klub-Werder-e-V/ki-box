@@ -142,7 +142,7 @@ ki-box ocr <datei.pdf>   # Scan mit deutscher Textebene versehen
 
 | | Inhalt | Fertig, wenn |
 |---|---|---|
-| **M0 Klären** | Verantwortliche Person, erster Nutzer, Harbor prüfen | Entscheidung „auf Harbor aufbauen oder eigenständig“ ist dokumentiert |
+| **M0 Klären** | Verantwortliche Person, erster Nutzer, Harbor prüfen | Entschieden am 9.11.2026: abgespeckter Fork [KI-Box Harbor](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor); offen sind Person und erster Nutzer |
 | **M1 Messen** | `compose.yml` von Hand auf 16-GB-Rechner, Testsatz | Modell, Kontextlänge und Suche anhand von Messwerten festgelegt |
 | **M2 Installer und Betrieb** | `install.sh`, CLI, Backup, Restore, Update | Alle Abnahmekriterien bestanden |
 | **M3 Pilot** | 4 Wochen echte Nutzung | Release v1.0.0 mit veröffentlichten Messwerten |
