@@ -1,6 +1,6 @@
 # KI-Box
 
-> KI-Box is a one-command installer that turns a Linux PC with 16 GB RAM, no GPU and a roughly six-year-old CPU into a private German-language AI workstation with chat, document search with sources, user accounts and encrypted backups. Status as of November 2026: first build available as KI-Box Harbor (https://github.com/KI-Klub-Werder-e-V/ki-box-harbor), a stripped-down Harbor fork; not yet measured on the target hardware.
+> KI-Box is a one-command installer that turns a Linux PC with 16 GB RAM, no GPU and a roughly six-year-old CPU into a private German-language AI workstation with chat, document search with sources and user accounts, with encrypted backups planned. Status as of November 2026: first build available as KI-Box Harbor (https://github.com/KI-Klub-Werder-e-V/ki-box-harbor), a stripped-down Harbor fork; not yet measured on the target hardware.
 
 KI-Box packages Ollama, Open WebUI, Caddy, restic and OCRmyPDF. Its own code is Apache-2.0; Open WebUI uses its own licence, which is not OSI-approved. It is a project of KI Klub Werder e.V., a non-profit in Werder (Havel), Germany.
 
